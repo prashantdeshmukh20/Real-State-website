@@ -1,6 +1,9 @@
 .o-container .image-container{
     border: 8px solid rgb(232 232 232 / 93%);
 }
+.o-left{
+   padding-left: 125px;
+}
 .o-container>div{
     flex:1
 }
@@ -40,3 +43,14 @@
 .accordionButton .primaryText{
     font-size: 1.1rem;
 }
+ @media (max-width: 1024px) {
+    .o-container{
+        flex-direction: column;
+    }
+
+    @media (max-width: 768px) {
+        .accordionButton .primaryText{
+            font-size: 0.8rem;
+        }
+    }
+ }

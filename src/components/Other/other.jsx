@@ -37,15 +37,15 @@ const other = () => {
           allowMultipleExpanded={false}
           preExpanded={[0]}
           >
-            {
-             data.map((item, i) => {
+            {data.map((item, i) => {
               /*const [ClassName, setClassName] = useState(null)*/
                 return (
                   <AccordionItem className="accordionItem" /*{'accordionItem ${ClassName}'}*/ key={i} uuid={i}>
                    <AccordionItemHeading>
                     <AccordionItemButton className='flexCenter accordionButton'>
 
-                     
+                      
+
                       <div className="flexCenter icon">{item.icon}</div>
                       <span className="primaryText">
                         {item.heading}
